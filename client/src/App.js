@@ -1,32 +1,21 @@
 import './App.css';
-import {useState} from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import {increment, decrement, incrementByAmount} from './redux/counter';
+
 
 function App() {
 
-  const [user, setUsers]=useState([{
-    name:'Prakhar Mishra',
-    age:15
-  },])
-  const [new_name, setNew_Name]=useState('');
-
-  const handleSubmit = () =>{
-    setUsers([...user, {
-      name:new_name,
-      age:15
-    }]);
-    setNew_Name('');
-  }
-
-
+  const { value }=useSelector((state)=>state.counter);
+  const dispatch = useDispatch();
+  
   return (
     <div className="App">
-      {user.map(e=>{
-        return (
-        <div>His name is {e.name} and his age is {e.age}</div>
-        )
-      })}
-      <input placeholder='Enter the new name' value={new_name} onChange={e=>setNew_Name(e.target.value)}/>
-      <button onClick={handleSubmit}>Add +</button>
+      <div>The value of the count is {value}</div>
+      <div>
+        <button onClick={()=>dispatch(increment())}>Increment</button>
+        <button onClick={()=>dispatch(decrement())}>Decrement</button>
+        <button onClick={()=>dispatch(incrementByAmount(15))}>Increment by 15</button>
+      </div>
     </div>
     
   );
