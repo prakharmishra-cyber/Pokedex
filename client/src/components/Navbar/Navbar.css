@@ -1,0 +1,13 @@
+.nav_header {
+    height: 20%;
+    background-color: rgb(129, 129, 248);
+    display: flex;
+    box-shadow:2px 2px 2px gainsboro;
+}
+
+.nav_title {
+    color:white;
+    font-size:3rem;
+    margin-left:1rem;
+    letter-spacing: 0.25rem;
+}

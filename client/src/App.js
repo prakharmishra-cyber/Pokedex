@@ -1,26 +1,22 @@
 import './App.css';
 //import { useSelector, useDispatch } from 'react-redux';
-import { useGetPokemonByNameQuery } from './redux/services/pokemon'
+import Navbar from './components/Navbar/Navbar';
+import Pokemons from './components/Pokemons/Pokemons';
+import Pokemon from './components/Pokemon/Pokemon';
+import { useGetPokemonByNameQuery, useGetAllPokemonQuery } from './redux/services/pokemon'
+import {Route, Routes, Link} from 'react-router-dom'
 
 
 function App() {
 
-  const { data, error, isLoading } = useGetPokemonByNameQuery('bulbasaur')
   
   return (
     <div className="App">
-      <div>
-      {error ? (
-        <>Oh no, there was an error</>
-      ) : isLoading ? (
-        <>Loading...</>
-      ) : data ? (
-        <>
-          <h3>{data.species.name}</h3>
-          <img src={data.sprites.front_shiny} alt={data.species.name} />
-        </>
-      ) : null}
-      </div>
+      <Navbar/>
+      <Routes>
+          <Route path='/' element={<Pokemons/>}/>
+          <Route path='pokemon/:id' element={<Pokemon/>}/>
+      </Routes>
     </div>
     
   );
