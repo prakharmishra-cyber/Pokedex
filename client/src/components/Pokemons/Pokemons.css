@@ -67,3 +67,23 @@
 .details_link:hover {
     box-shadow: 3px 3px 3px gainsboro;
 }
+
+.page_controls {
+    margin:1%;
+    padding:10px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.page_controls > button {
+    margin-right: 20px;
+    padding:10px;
+    background-color: rgb(66, 117, 188);
+    color:white;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    box-shadow: 2px 2px 3px gainsboro;
+    cursor: pointer;
+}

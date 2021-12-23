@@ -10,7 +10,7 @@ export const pokemonApi = createApi({
       query: (name) => `pokemon/${name}`,
     }),
     getAllPokemon: builder.query({
-      query : ()=>`/pokemon`,
+      query : (page_no)=>`/pokemon?offset=${page_no}&limit=20`,
     }),
   }),
 })

@@ -9,6 +9,7 @@
     flex-direction: column;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    background-color: rgb(248, 245, 245);
 }
 
 .pokemon_name {
