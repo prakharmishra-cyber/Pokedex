@@ -1,0 +1,106 @@
+.pokemon_details {
+    border:1px solid gainsboro;
+    border-radius: 5px;
+    box-shadow: 4px 5px 3px gainsboro;
+    margin:15px;
+    height:650px;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.pokemon_name {
+    margin-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-top:5px;
+    cursor: pointer;
+}
+
+.pokemon_name_heading {
+    margin-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.pokemon_images {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pokemon_images > img {
+    margin:4px;
+    border:1px solid gainsboro;
+    box-shadow: 1px 2px 2px gainsboro;
+    cursor: pointer;
+}
+
+.pokemon_images_heading {
+    margin-left: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pokemon_stats_heading {
+    margin-left: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pokemon_stats_details {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:4px;
+    border:1px solid gainsboro;
+    box-shadow: 1px 2px 2px gainsboro;
+    width:150px;
+    padding:5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    background-color: ghostwhite;
+    cursor: pointer;
+}
+
+.cover_up {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.pokemon_experience {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    background-color: ghostwhite;
+    padding:10px;
+    margin-top: 5px;
+    border-radius: 50%;
+    width:25px;
+    border:1px solid gainsboro;
+    text-align: center;
+    box-shadow: 2px 2px 3px gainsboro;
+    cursor:pointer;
+}
+
+.ability_details {
+    border: 1px solid gainsboro;
+    padding:20px;
+    width:120px;
+    box-shadow:2px 2px 3px gainsboro;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    background-color: ghostwhite;
+    cursor: pointer;
+    margin-right: 10px;
+}
+

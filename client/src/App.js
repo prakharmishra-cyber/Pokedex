@@ -3,8 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Pokemons from './components/Pokemons/Pokemons';
 import Pokemon from './components/Pokemon/Pokemon';
-import { useGetPokemonByNameQuery, useGetAllPokemonQuery } from './redux/services/pokemon'
-import {Route, Routes, Link} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom';
 
 
 function App() {
