@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Pokemons.css';
 import { useGetAllPokemonQuery } from '../../redux/services/pokemon';
 import { Link } from 'react-router-dom';
+import PokemonImage from './PokemonImage';
 
 const Pokemons = () => {
 
@@ -29,6 +30,7 @@ const Pokemons = () => {
                                             <div className='pokemon_title'>POKEMON NAME</div>
                                             <div className='pokemon_title_answer'>{element.name}</div>
                                         </div>
+                                        <PokemonImage pokemon_name={element.name}/>
                                         <Link to={`pokemon/${element.name}`} className='details_link'>
                                             Click to know details
                                         </Link>
